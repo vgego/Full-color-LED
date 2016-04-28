@@ -1,0 +1,5 @@
+#!/bin/bash
+gcc -c main.c -g
+gcc -c alphalight.c -g
+gcc -o main main.o alphalight.o -lpthread -lm -lwiringPi
+rm alphalight.o main.o
